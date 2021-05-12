@@ -31,7 +31,15 @@ Reunimos aqui algumas das ferramentas mais utilizadas no desenvolvimento `Web` c
 
 ## Como Testar
 
-### `yarn`
+### `git clone https://github.com/EscolaDeSaudePublica/front-base.git`
+
+Baixar o repositório.
+
+### `cd front-base`
+
+Entrar na pasta.
+
+### `yarn install`
 
 Instala as dependências do projeto.
 

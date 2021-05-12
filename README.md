@@ -2,17 +2,17 @@
 
 Esse projeto tem como finalidade manter uma base consistente de um projeto frontend em ReactJS para facilitar o início do desenvolvimento de aplicações da [**ESP - Escola de Saúde Pública do Ceará**](https://www.esp.ce.gov.br/).
 
-Reunimos aqui algumas das ferramentas mais utilisadas no desenvolvimento `Web` com `React`. Porém, fique livre para usar da maneira que achar mais interesante os códigos que disponibilizamos aqui.
+Reunimos aqui algumas das ferramentas mais utilizadas no desenvolvimento `Web` com `React`. Porém, fique livre para usar da maneira que achar mais interessante os códigos que disponibilizamos aqui.
 
 ## Ferramentasutilizadas
 
 - [VS Code](https://code.visualstudio.com/): O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS.
-- [Yarn](https://yarnpkg.com/): Yarn é um gerenciador de pacotes que também atua como gerenciador de projeto. Quer você trabalhe em projetos únicos ou grandes monorepos, como um aquarista ou um usuário corporativo, nós temos o que você precisa.
+- [Yarn](https://yarnpkg.com/): Yarn é um gerenciador de pacotes que também atua como gerenciador de projetos.
 
 ## Tecnologias utilizadas
 
 - [React](https://pt-br.reactjs.org/): Uma biblioteca JavaScript para criar interfaces de usuário.
-- [Typescript](https://www.typescriptlang.org/): TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem.
+- [TypeScript](https://www.typescriptlang.org/): TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem.
 - [Material UI](https://material-ui.com/pt/): Biblioteca de componentes React para um desenvolvimento ágil e fácil.
 
 ## Dependências do projeto
@@ -23,8 +23,8 @@ Reunimos aqui algumas das ferramentas mais utilisadas no desenvolvimento `Web` c
 - [react-helmet](https://github.com/nfl/react-helmet): Este componente React reutilizável gerenciará todas as suas alterações no cabeçalho do documento.
 - [react-hook-form](https://react-hook-form.com/): Formulários eficientes, flexíveis e extensíveis com validação fácil de usar.
 - [react-perfect-scrollbar](https://github.com/goldenyz/react-perfect-scrollbar): Este é um invólucro para permitir o uso da [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) no React.
-- [react-router-dom](https://reactrouter.com/web/guides/quick-start): Gerenciardor de rota no React.
-- [react-text-mask](https://github.com/text-mask/text-mask): Biblioteca de máscaras de `inputs`.
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start): Gerenciador de rotas no React.
+- [react-text-mask](https://github.com/text-mask/text-mask): Biblioteca de máscaras de `inputs` para React.
 - [react-toastify](https://fkhadra.github.io/react-toastify/introduction): Notificações estilizadas para o React.
 - [styled-components](link): Use os melhores bits de ES6 e CSS para estilizar seus aplicativos sem estresse 💅🏾.
 - [yup](link): Validações com JS. (Nesse projeto, usamos ele em conjunto com o `react-hook-form`).

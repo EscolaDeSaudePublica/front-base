@@ -11,22 +11,16 @@ import {
 } from '@material-ui/core';
 import { useEffect } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
+import useUserInfo from 'src/hooks/useUserInfo';
 import {
   BarChartIcon,
   BookIcon,
   EditIcon,
   HomeIcon,
-  LockIcon,
   SettingsIcon,
 } from 'src/icons';
 import RouterNames from 'src/routes/names';
 import NavItem from './NavItem';
-
-const user = {
-  avatar: '/static/images/avatars/avatar_1.png',
-  jobTitle: 'Desenvolvedor Pleno',
-  name: 'Fulado de Tal',
-};
 
 const items = [
   {
@@ -54,11 +48,6 @@ const items = [
     icon: SettingsIcon,
     title: 'Settings',
   },
-  {
-    href: RouterNames.LOGIN,
-    icon: LockIcon,
-    title: 'Login',
-  },
 ];
 
 const useStyles = makeStyles(() => ({
@@ -79,7 +68,10 @@ const useStyles = makeStyles(() => ({
 
 const NavBar = ({ onMobileClose, openMobile }: any) => {
   const classes = useStyles();
+
   const location = useLocation();
+
+  const user = useUserInfo();
 
   useEffect(() => {
     if (openMobile && onMobileClose) {
@@ -93,14 +85,14 @@ const NavBar = ({ onMobileClose, openMobile }: any) => {
         <Avatar
           className={classes.avatar}
           component={RouterLink}
-          src={user.avatar}
+          src={user.avatarUrl}
           to={RouterNames.HOME}
         />
         <Typography color="textPrimary" variant="h5">
-          {user.name}
+          {user.nome}
         </Typography>
         <Typography color="textSecondary" variant="body2">
-          {user.jobTitle}
+          {user.cargo}
         </Typography>
       </Box>
       <Divider />

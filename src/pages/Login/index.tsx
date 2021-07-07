@@ -40,7 +40,7 @@ const Login: React.FC = () => {
 
   const onSubmit = useCallback((data: LoginFromData) => {
     signIn({ username: data.cpf, password: data.password });
-    history.push(RouterNames.DASHBOARD);
+    history.push(RouterNames.HOME);
   }, []);
 
   return (

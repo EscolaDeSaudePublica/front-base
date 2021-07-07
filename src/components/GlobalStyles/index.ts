@@ -5,7 +5,6 @@ const useStyles = makeStyles((theme) =>
     '@global': {
       '*::-webkit-scrollbar': {
         width: '0.6rem',
-        height: '0.6rem',
       },
       '*::-webkit-scrollbar-track': {
         '-webkit-box-shadow': 'inset 0 0 6px rgba(0,0,0,0.00)',
@@ -15,6 +14,9 @@ const useStyles = makeStyles((theme) =>
         borderRadius: '0.3rem',
         '&:hover': {
           backgroundColor: theme.palette.grey[400],
+        },
+        '&:active': {
+          backgroundColor: theme.palette.grey[500],
         },
       },
       '*': {

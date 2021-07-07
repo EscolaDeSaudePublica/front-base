@@ -14,6 +14,7 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 import {
   BarChartIcon,
   BookIcon,
+  EditIcon,
   HomeIcon,
   LockIcon,
   SettingsIcon,
@@ -42,6 +43,11 @@ const items = [
     href: RouterNames.TURMAS,
     icon: BookIcon,
     title: 'Minhas Turmas',
+  },
+  {
+    href: RouterNames.TIPOGRAFIA,
+    icon: EditIcon,
+    title: 'Tipografia',
   },
   {
     href: RouterNames.SETTINGS,

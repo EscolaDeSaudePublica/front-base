@@ -9,6 +9,7 @@ import Turmas from 'src/pages/Turmas';
 import Settings from 'src/pages/Settings';
 import Home from 'src/pages/Home';
 import RouterNames from './names';
+import Tipografia from 'src/pages/Tipografia';
 
 const Routes = () => {
   return (
@@ -36,6 +37,13 @@ const Routes = () => {
         layout={DashboardLayout}
         path={RouterNames.TURMAS}
         component={Turmas}
+        exact
+        isPrivate
+      />
+      <RouterWithLayout
+        layout={DashboardLayout}
+        path={RouterNames.TIPOGRAFIA}
+        component={Tipografia}
         exact
         isPrivate
       />

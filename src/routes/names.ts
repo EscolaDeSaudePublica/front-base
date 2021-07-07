@@ -3,6 +3,7 @@ const RouterNames = {
   LOGIN: '/login',
   DASHBOARD: '/dashboard',
   TURMAS: '/turmas',
+  TIPOGRAFIA: '/tipografia',
   SETTINGS: '/settings',
   NOT_FOUND: '*',
 };

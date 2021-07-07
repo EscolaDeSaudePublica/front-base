@@ -22,7 +22,6 @@ Reunimos aqui algumas das ferramentas mais utilizadas no desenvolvimento `Web` c
 - [react-feather](https://github.com/feathericons/react-feather): Biblioteca de código aberto de ícones simplesmente lindos.
 - [react-helmet](https://github.com/nfl/react-helmet): Este componente React reutilizável gerenciará todas as suas alterações no cabeçalho do documento.
 - [react-hook-form](https://react-hook-form.com/): Formulários eficientes, flexíveis e extensíveis com validação fácil de usar.
-- [react-perfect-scrollbar](https://github.com/goldenyz/react-perfect-scrollbar): Este é um invólucro para permitir o uso da [perfect-scrollbar](https://github.com/noraesae/perfect-scrollbar) no React.
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start): Gerenciador de rotas no React.
 - [react-text-mask](https://github.com/text-mask/text-mask): Biblioteca de máscaras de `inputs` para React.
 - [react-toastify](https://fkhadra.github.io/react-toastify/introduction): Notificações estilizadas para o React.

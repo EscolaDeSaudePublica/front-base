@@ -1,14 +1,16 @@
-import { Typography } from '@material-ui/core';
-import { Helmet } from 'react-helmet';
+import GenericContent from 'src/components/GenericContent';
+import RouterNames from 'src/routes/names';
 
 const Turmas: React.FC = () => {
   return (
-    <div>
-      <Helmet>
-        <title>Turmas | Sagu</title>
-      </Helmet>
-      <Typography variant="h1">Turmas</Typography>
-    </div>
+    <GenericContent
+      helmetText="Turmas"
+      title="Turmas"
+      breadcrumbsLinks={[
+        { label: 'Home', href: RouterNames.HOME },
+        { label: 'Turmas' },
+      ]}
+    />
   );
 };
 

@@ -1,14 +1,12 @@
-import { Typography } from '@material-ui/core';
-import { Helmet } from 'react-helmet';
+import GenericContent from 'src/components/GenericContent';
 
 const Settings: React.FC = () => {
   return (
-    <div>
-      <Helmet>
-        <title>Settings | Sagu</title>
-      </Helmet>
-      <Typography variant="h1">Settings</Typography>
-    </div>
+    <GenericContent
+      helmetText="Settings"
+      title="Settings"
+      breadcrumbsLinks={[{ label: 'Settings' }]}
+    />
   );
 };
 

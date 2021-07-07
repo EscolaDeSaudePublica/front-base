@@ -14,10 +14,10 @@ import { ContainerWrapper } from './styles';
 import { useForm } from 'react-hook-form';
 import { useCallback } from 'react';
 import { useHistory } from 'react-router';
-import NAMES from 'src/routes/names';
 import { yupResolver } from '@hookform/resolvers/yup';
 import schema from './schema';
 import InputCPF from 'src/components/inputs/InputCPF';
+import RouterNames from 'src/routes/names';
 
 interface LoginFromData {
   cpf: string;
@@ -39,7 +39,7 @@ const Login: React.FC = () => {
   // TODO: implementar a validação
   const onSubmit = useCallback((data: LoginFromData) => {
     console.log(JSON.stringify(data, null, 2));
-    history.push(NAMES.DASHBOARD);
+    history.push(RouterNames.DASHBOARD);
   }, []);
 
   return (

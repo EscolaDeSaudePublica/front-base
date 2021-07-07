@@ -1,4 +1,4 @@
-export default {
+const RouterNames = {
   HOME: '/',
   LOGIN: '/login',
   DASHBOARD: '/dashboard',
@@ -6,3 +6,5 @@ export default {
   SETTINGS: '/settings',
   NOT_FOUND: '*',
 };
+
+export default RouterNames;

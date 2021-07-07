@@ -1,14 +1,12 @@
-import { Typography } from '@material-ui/core';
-import { Helmet } from 'react-helmet';
+import GenericContent from 'src/components/GenericContent';
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <Helmet>
-        <title>Home | Sagu</title>
-      </Helmet>
-      <Typography variant="h1">Home</Typography>
-    </div>
+    <GenericContent
+      helmetText="Home"
+      title="Home"
+      breadcrumbsLinks={[{ label: 'Home' }]}
+    />
   );
 };
 

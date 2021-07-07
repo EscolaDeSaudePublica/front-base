@@ -18,7 +18,7 @@ import {
   LockIcon,
   SettingsIcon,
 } from 'src/icons';
-import NAMES from 'src/routes/names';
+import RouterNames from 'src/routes/names';
 import NavItem from './NavItem';
 
 const user = {
@@ -29,27 +29,27 @@ const user = {
 
 const items = [
   {
-    href: NAMES.HOME,
+    href: RouterNames.HOME,
     icon: HomeIcon,
     title: 'Home',
   },
   {
-    href: NAMES.DASHBOARD,
+    href: RouterNames.DASHBOARD,
     icon: BarChartIcon,
     title: 'Dashboard',
   },
   {
-    href: NAMES.TURMAS,
+    href: RouterNames.TURMAS,
     icon: BookIcon,
     title: 'Minhas Turmas',
   },
   {
-    href: NAMES.SETTINGS,
+    href: RouterNames.SETTINGS,
     icon: SettingsIcon,
     title: 'Settings',
   },
   {
-    href: NAMES.LOGIN,
+    href: RouterNames.LOGIN,
     icon: LockIcon,
     title: 'Login',
   },

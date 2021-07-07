@@ -10,7 +10,7 @@ import {
   Settings as SettingsIcon,
 } from 'react-feather';
 import { useHistory } from 'react-router';
-import NAMES from 'src/routes/names';
+import RouterNames from 'src/routes/names';
 
 const useStyles = makeStyles({
   root: {
@@ -22,17 +22,17 @@ const useStyles = makeStyles({
 
 const items = [
   {
-    href: NAMES.DASHBOARD,
+    href: RouterNames.DASHBOARD,
     icon: <BarChartIcon />,
     title: 'Dashboard',
   },
   {
-    href: NAMES.TURMAS,
+    href: RouterNames.TURMAS,
     icon: <BookIcon />,
     title: 'Turmas',
   },
   {
-    href: NAMES.SETTINGS,
+    href: RouterNames.SETTINGS,
     icon: <SettingsIcon />,
     title: 'Settings',
   },

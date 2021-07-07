@@ -18,6 +18,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import schema from './schema';
 import InputCPF from 'src/components/inputs/InputCPF';
 import RouterNames from 'src/routes/names';
+import { useAuth } from 'src/context/AuthContext';
 
 interface LoginFromData {
   cpf: string;
@@ -27,7 +28,8 @@ interface LoginFromData {
 const Login: React.FC = () => {
   const history = useHistory();
 
-  // TODO: remover esses valores default
+  const { signIn } = useAuth();
+
   const { control, handleSubmit } = useForm<LoginFromData>({
     defaultValues: {
       cpf: '',
@@ -36,9 +38,8 @@ const Login: React.FC = () => {
     resolver: yupResolver(schema),
   });
 
-  // TODO: implementar a validação
   const onSubmit = useCallback((data: LoginFromData) => {
-    console.log(JSON.stringify(data, null, 2));
+    signIn({ username: data.cpf, password: data.password });
     history.push(RouterNames.DASHBOARD);
   }, []);
 

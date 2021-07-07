@@ -1,4 +1,6 @@
 import { createContext, useCallback, useContext, useState } from 'react';
+import { cache } from 'swr';
+import api from 'src/api';
 
 // Local history
 export const LH_TOKEN_NAME = '@Sagu:token';
@@ -6,6 +8,7 @@ export const LH_TOKEN_NAME = '@Sagu:token';
 interface AuthContextState {
   token: TokenState;
   signIn({ username, password }: UserData): Promise<void>;
+  signOut(): void;
   userLogged(): boolean;
 }
 
@@ -46,11 +49,24 @@ const AuthProvider: React.FC = ({ children }) => {
 
     // const { token } = response.data;
 
-    setToken(token);
+    // Valor para teste
+    setToken({ token: 'dasjgdjaskldjkaksdhjkas' });
 
     // TODO: colocar aqui o retrono da api, quando tiver
-    localStorage.setItem(LH_TOKEN_NAME, '');
-    // api.defaults.headers.authorization = `Bearer ${token}`;
+    localStorage.setItem(LH_TOKEN_NAME, 'dasjgdjaskldjkaksdhjkas');
+
+    api.defaults.headers.authorization = 'Bearer dasjgdjaskldjkaksdhjkas';
+  }, []);
+
+  const signOut = useCallback(async () => {
+    setToken({} as TokenState);
+
+    // Limpa o cache do SWR
+    cache.clear();
+    // Remove a local history da token
+    localStorage.removeItem(LH_TOKEN_NAME);
+    // Remove authorization do header
+    api.defaults.headers.authorization = undefined;
   }, []);
 
   const userLogged = useCallback(() => {
@@ -62,7 +78,7 @@ const AuthProvider: React.FC = ({ children }) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ token, signIn, userLogged }}>
+    <AuthContext.Provider value={{ token, signIn, signOut, userLogged }}>
       {children}
     </AuthContext.Provider>
   );

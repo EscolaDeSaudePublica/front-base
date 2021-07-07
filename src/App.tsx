@@ -1,5 +1,4 @@
 import { ThemeProvider } from '@material-ui/styles';
-import 'fontsource-roboto';
 import { BrowserRouter } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.min.css';
 import Routes from 'src/routes';

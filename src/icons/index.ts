@@ -1,5 +1,6 @@
 import {
   AlertCircle as AlertCircleIcon,
+  ArrowLeft as ArrowLeftIcon,
   BarChart as BarChartIcon,
   Book as BookIcon,
   Home as HomeIcon,
@@ -13,6 +14,7 @@ import {
 
 export {
   AlertCircleIcon,
+  ArrowLeftIcon,
   BarChartIcon,
   BookIcon,
   HomeIcon,

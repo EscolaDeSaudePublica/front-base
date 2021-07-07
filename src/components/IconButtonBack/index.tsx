@@ -1,13 +1,13 @@
 import { IconButton, IconButtonProps } from '@material-ui/core';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { useHistory } from 'react-router';
+import { ArrowLeftIcon } from 'src/icons';
 
 const IconButtonBack: React.FC<IconButtonProps> = (props) => {
   const history = useHistory();
 
   return (
     <IconButton {...props} onClick={() => history.go(-1)}>
-      <ArrowBackIcon fontSize="small" />
+      <ArrowLeftIcon size={16} />
     </IconButton>
   );
 };

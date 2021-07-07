@@ -7,7 +7,9 @@ interface useApiWithSwrParms {
   axiosRequestConfig?: AxiosRequestConfig;
 }
 
-export function useApiWithSwr<Data, Error = unknown>(parms: useApiWithSwrParms) {
+export function useApiWithSwr<Data, Error = unknown>(
+  parms: useApiWithSwrParms
+) {
   const { url, axiosRequestConfig } = parms;
 
   const { data, error, mutate, isValidating } = useSWR<Data, Error>(

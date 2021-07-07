@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Button, ListItem, makeStyles, Typography } from '@material-ui/core';
 import { NavLink as RouterLink } from 'react-router-dom';
-import clsx from 'clsx';
-import { Button, ListItem, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   item: {
@@ -35,23 +34,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const NavItem = ({ className, href, icon: Icon, title, ...rest }: any) => {
+const NavItem = ({ href, icon: Icon, title, ...rest }: any) => {
   const classes = useStyles();
 
   return (
-    <ListItem
-      className={clsx(classes.item, className)}
-      disableGutters
-      {...rest}
-    >
+    <ListItem className={classes.item} disableGutters {...rest}>
       <Button
         activeClassName={classes.active}
         className={classes.button}
         component={RouterLink}
         to={href}
+        exact
       >
         {Icon && <Icon className={classes.icon} size="20" />}
-        <span className={classes.title}>{title}</span>
+        <Typography variant="body2" className={classes.title}>
+          {title}
+        </Typography>
       </Button>
     </ListItem>
   );

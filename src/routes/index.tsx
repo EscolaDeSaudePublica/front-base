@@ -8,6 +8,7 @@ import NAMES from './names';
 import NotFound from 'src/pages/NotFound';
 import Turmas from 'src/pages/Turmas';
 import Settings from 'src/pages/Settings';
+import Home from 'src/pages/Home';
 
 const Routes = () => {
   return (
@@ -20,6 +21,13 @@ const Routes = () => {
       />
       <RouterWithLayout
         layout={DashboardLayout}
+        path={NAMES.HOME}
+        component={Home}
+        exact
+        isPrivate
+      />
+      <RouterWithLayout
+        layout={DashboardLayout}
         path={NAMES.DASHBOARD}
         component={Dashboard}
         isPrivate
@@ -28,12 +36,14 @@ const Routes = () => {
         layout={DashboardLayout}
         path={NAMES.TURMAS}
         component={Turmas}
+        exact
         isPrivate
       />
       <RouterWithLayout
         layout={DashboardLayout}
         path={NAMES.SETTINGS}
         component={Settings}
+        exact
         isPrivate
       />
       <RouterWithLayout

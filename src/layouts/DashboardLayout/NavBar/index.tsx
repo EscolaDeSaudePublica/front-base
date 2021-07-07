@@ -1,6 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect } from 'react';
-import { Link as RouterLink, useLocation } from 'react-router-dom';
 import {
   Avatar,
   Box,
@@ -8,33 +6,33 @@ import {
   Drawer,
   Hidden,
   List,
-  Typography,
   makeStyles,
+  Typography,
 } from '@material-ui/core';
+import { useEffect } from 'react';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import {
-  AlertCircle as AlertCircleIcon,
-  BarChart as BarChartIcon,
-  Lock as LockIcon,
-  Settings as SettingsIcon,
-  ShoppingBag as ShoppingBagIcon,
-  User as UserIcon,
-  UserPlus as UserPlusIcon,
-  Users as UsersIcon,
-  Book as BookIcon,
-} from 'react-feather';
-import NavItem from './NavItem';
+  BarChartIcon,
+  BookIcon,
+  HomeIcon,
+  LockIcon,
+  SettingsIcon,
+} from 'src/icons';
 import NAMES from 'src/routes/names';
+import NavItem from './NavItem';
 
-// TODO: criar um useUserInfo hook para prover os dados do usuário.
-// Tomando cuidado para não prover dados importantes.
 const user = {
-  avatar:
-    'https://avatars.githubusercontent.com/u/1212015?s=400&u=886cb9225f7bce0e75a240523834326ebdfeb49a&v=4',
+  avatar: '/static/images/avatars/avatar_1.png',
   jobTitle: 'Desenvolvedor Pleno',
-  name: 'Ericson Moreira',
+  name: 'Fulado de Tal',
 };
 
 const items = [
+  {
+    href: NAMES.HOME,
+    icon: HomeIcon,
+    title: 'Home',
+  },
   {
     href: NAMES.DASHBOARD,
     icon: BarChartIcon,
@@ -46,21 +44,6 @@ const items = [
     title: 'Minhas Turmas',
   },
   {
-    href: '/app/customers',
-    icon: UsersIcon,
-    title: 'Customers',
-  },
-  {
-    href: '/app/products',
-    icon: ShoppingBagIcon,
-    title: 'Products',
-  },
-  {
-    href: '/app/account',
-    icon: UserIcon,
-    title: 'Account',
-  },
-  {
     href: NAMES.SETTINGS,
     icon: SettingsIcon,
     title: 'Settings',
@@ -69,16 +52,6 @@ const items = [
     href: NAMES.LOGIN,
     icon: LockIcon,
     title: 'Login',
-  },
-  {
-    href: '/register',
-    icon: UserPlusIcon,
-    title: 'Register',
-  },
-  {
-    href: '/404',
-    icon: AlertCircleIcon,
-    title: 'Error',
   },
 ];
 

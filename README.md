@@ -4,18 +4,18 @@ Esse projeto tem como finalidade manter uma base consistente de um projeto front
 
 Reunimos aqui algumas das ferramentas mais utilizadas no desenvolvimento `Web` com `React`. Porém, fique livre para usar da maneira que achar mais interessante os códigos que disponibilizamos aqui.
 
-## Ferramentasutilizadas
+## 🧰 Ferramentas
 
 - [VS Code](https://code.visualstudio.com/): O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS.
 - [Yarn](https://yarnpkg.com/): Yarn é um gerenciador de pacotes que também atua como gerenciador de projetos.
 
-## Tecnologias utilizadas
+## 👨‍💻 Tecnologias
 
 - [React](https://pt-br.reactjs.org/): Uma biblioteca JavaScript para criar interfaces de usuário.
 - [TypeScript](https://www.typescriptlang.org/): TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem.
 - [Material UI](https://material-ui.com/pt/): Biblioteca de componentes React para um desenvolvimento ágil e fácil.
 
-## Dependências do projeto
+## 🏬 Dependências
 
 - [date-fns](https://date-fns.org/): Fornece o conjunto de ferramentas mais abrangentes, porém simples e consistentes para manipular datas JavaScript em um navegador e Node.js.
 - [lodash](https://lodash.com/): Uma biblioteca de utilitários JavaScript moderna que oferece modularidade, desempenho e extras.
@@ -29,7 +29,7 @@ Reunimos aqui algumas das ferramentas mais utilizadas no desenvolvimento `Web` c
 - [styled-components](link): Use os melhores bits de ES6 e CSS para estilizar seus aplicativos sem estresse 💅🏾.
 - [yup](link): Validações com JS. (Nesse projeto, usamos ele em conjunto com o `react-hook-form`).
 
-## Como Testar
+## 🐛 Como Testar
 
 ### `git clone https://github.com/EscolaDeSaudePublica/front-base.git`
 

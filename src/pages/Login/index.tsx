@@ -52,14 +52,18 @@ const Login: React.FC = () => {
           <Card component="form" onSubmit={handleSubmit(onSubmit)}>
             <CardContent>
               <Box marginBottom={4}>
-                <Typography color="textPrimary" variant="h2">
+                <Typography color="textPrimary" variant="h1" gutterBottom>
                   Entrar
                 </Typography>
-                <Typography color="textSecondary" gutterBottom variant="body2">
+                <Typography
+                  color="textSecondary"
+                  variant="subtitle1"
+                  gutterBottom
+                >
                   Faça login na plataforma interna
                 </Typography>
               </Box>
-              <Grid container spacing={1}>
+              <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <InputCPF
                     control={control}
